@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Rock Paper Scissor</h1>
+        <div class="score">
+            <div class="myScore">
+                <h2>My Score: <span id="userScore">0</span> </h2>
+            </div>
+            <div class="compScore">
+                <h2>Computer Score: <span id="computerScore">0</span> </h2>
+            </div>
+        </div>
+
+        <div class="showAction">
+            <div class="userSelect">
+                <h2>User</h2>
+                <img src="" alt="" id="userImg">
+            </div>
+            <div class="compSelect">
+                <h2>Computer</h2>
+                <img src="" alt="" id="compImg">
+            </div>
+        </div>
+        <div class="result">
+            <h2>Final Result: <span id="gameResult"></span></h2>
+        </div>
+        <div class="gameActions">
+            <img src="imgs/rock.png" onclick="myFunc1()" alt="">
+            <img src="imgs/paper.png" onclick="myFunc2()" alt="">
+            <img src="imgs/scissor.png" onclick="myFunc3()" alt="">
+        </div>
+
+        <div class="gameButtons">
+            <button id="Reset" onclick='gameReset()'>Reset</button>
+            <button id="exit">Exit</button>
+        </div>
+    </div>
+    <div class="startButton">
+        <button id="startBtn">Start Game</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

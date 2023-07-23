@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lumanosimo', cursive;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-color: #2c2c54;
+    color: #fff;
+    text-align: center;
+}
+h1{
+    font-size: 2rem;
+    background-color: #202020;
+    margin-bottom: 3rem;
+}
+.score{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.score .compScore{
+    margin-left: 5rem;
+}
+img{
+    width: 15vh;
+    cursor: pointer;
+}
+.result span{
+    color: aquamarine;
+}
+.gameButtons button{
+    border: 0;
+    outline: 0;
+    background-color: #706fd3;
+    padding: 8px 15px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    box-shadow: 0 0 20px #202020;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.startButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#startBtn{
+    border: 0;
+    outline: 0;
+    background-color: #706fd3;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #fff;
+    box-shadow: 10 10 20px #202020;
+    cursor: pointer;
+}
+    
+.container{
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    h1 {
+        font-size: 1.4rem;
+        padding: 20px 0;
+    }
+    h2 {
+        font-size: 1rem;
+    }
+    img {
+        width: 7vh;
+    }
+    .score .compScore{
+        margin-left: 2rem;
+    }
+    #startBtn {
+        padding: 11px 16px;
+        font-size: 1rem;
+    }
+}
